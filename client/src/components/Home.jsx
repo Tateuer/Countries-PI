@@ -23,7 +23,7 @@ export default function Home() {
   const countriesPerPage = 10;
   const countriesPerFirstPage = 9
   
-
+  
   const start = currentPage === 1 ? countriesPerFirstPage  : (currentPage * countriesPerPage) -1 ;
   const end = currentPage === 1 ? 0 : (start - countriesPerPage);
   const currentCountries = countries.slice(end, start);

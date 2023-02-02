@@ -68,24 +68,4 @@ export function byActivity(activity){
         payload: activity,
     }
 }
-// export function postActivities(payload){
-//     return async function(dispatch){
-//         try {
-//             const response = await axios.post("/activities", payload);
-//             dispatch({type: POST_ACTIVITIES, payload: response.data});
-//             alert("Activity added!");
-//         } catch (error) {
-//             console.log(error);
-//             alert("Error adding activity, please try again later.");
-//         }
-//     }         
-// }
 
-  
-//  export function postActivities(payload){
-//      return  function(dispatch){
-//           axios.post("/activities", payload);
-//         console.log(payload)
-//         return response;
-//      }         
-//  }

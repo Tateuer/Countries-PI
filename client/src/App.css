@@ -90,13 +90,13 @@ font-size: 25px;
 /*Home*/
 
 .busquedafiltros{
-  background-color: rgba(29, 27, 27, 0.918) ;
+  background-color: black ;
   padding: 15px;
 }
 .filtros{
   background: rgb(2,0,36);
   /* background: linear-gradient(180deg, rgba(2,0,36,1) 0%, rgba(24,119,242,1) 0%, rgba(0,212,255,1) 100%); */
-  background-color: rgba(29, 27, 27, 0.918);
+  background-color: black;
   display: flex;
   justify-content: space-between;
   padding: 30px ;
@@ -269,7 +269,7 @@ font-size: 25px;
   display: inline-block;
 }
 .title{
-  background-color:  rgba(29, 27, 27, 0.918) ;
+  background-color:  black;
   padding-top: 30px;
 }
 

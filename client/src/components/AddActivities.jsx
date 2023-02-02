@@ -13,13 +13,19 @@
     } else if (/[0-9]/.test(form.name)){
         error.name = "Invalid name"
     }
+    if (!form.difficulty) {
+      error.difficulty = "Difficulty is required";
+      } else if (isNaN(form.difficulty) || form.difficulty <= 0) {
+      error.difficulty = "Difficulty must be a number greater than 0";
+      }
     if(!form.season){
         error.season = "Must enter a season"
     } else if(!["summer","spring","winter","autumn"].includes(form.season.toLowerCase()))
     error.season = "You must enter a valid season, summer, autumn, spring or winter"
-    if(!form.countries.length|| form.countries[0] === 'default'){
+
+    if(!form.countries.length){
       error.countries = "You have to select a country"
-    }
+      }
 
     return error;
 }
@@ -45,6 +51,17 @@
       let objError = validate({...form, [e.target.name]:e.target.value})
         setError(objError)
     }
+
+    function handleSelect(e){
+      if(e.target.value){
+      setInput({
+          ...form,
+          countries:[...form.countries,e.target.value]
+      })
+    }
+    
+  }
+
      async function handleSubmit(e) {
         e.preventDefault();
         console.log(form)
@@ -56,16 +73,6 @@
       alert("Activity has been created successfully");
     }
 
-      function handleSelect(e){
-        if(e.target.value){
-        setInput({
-            ...form,
-            countries:[...form.countries,e.target.value]
-        })
-      }
-      console.log(form.countries)
-    }
-    
     useEffect(() => {
       dispatch(getActivities());
       dispatch(getCountries)
@@ -125,6 +132,9 @@
               value={form.difficulty}
               className="activities-form-input"
             />
+            {
+                error.difficulty && <p>{error.difficulty}</p>
+            }
           </div>
           <div className="activities-form-row">
             <label className="activities-form-label">Duration</label>
