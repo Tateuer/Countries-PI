@@ -2,8 +2,7 @@ import { Link } from "react-router-dom";
 import React from "react";
 
 const Landing = () => {
-    // Lógica y funcionalidad de la pantalla de países
-    //traer lo de la api (line 8)
+    
     return (
       <div className="landingcontainer">
         <div className="landinggroup">

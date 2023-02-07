@@ -6,6 +6,7 @@ import {
   ORDER_CONTINENT,
   GET_ACTIVITIES,
   BY_ACTIVITY,
+  //FOR_ACTIVITY_SEASON,
 } from "../actions/index";
 
 const initialState = {
@@ -39,7 +40,7 @@ export default function reducer(state = initialState, action) {
       });
       return {
         ...state,
-        filteredCountries: orderedCountries,
+        countries: orderedCountries,
       };
     case ORDER_POPULATION:
       let orderedPopulation = [...state.countries];
@@ -54,7 +55,7 @@ export default function reducer(state = initialState, action) {
       });
       return {
         ...state,
-        filteredCountries: orderedPopulation,
+        countries: orderedPopulation,
       };
     case ORDER_CONTINENT:
       let allCountries = [...state.countries];
@@ -64,7 +65,7 @@ export default function reducer(state = initialState, action) {
           : allCountries.filter((p) => p.continent === action.payload);
       return {
         ...state,
-        filteredCountries: filteredContinents,
+        countries: filteredContinents,
       };
     case GET_ACTIVITIES:
         return{
@@ -75,13 +76,25 @@ export default function reducer(state = initialState, action) {
       const allCountriesActivities = state.countries;
       const filteredActivities = 
         action.payload === "all" 
-          ? allCountriesActivities.filter((p) => p.Activities?.name 
+          ? allCountriesActivities.filter((p) => p.Activities?.name
           ? p.Activities : false):
-          allCountriesActivities.filter((p) => p.Activities.some(({ name }) => name === action.payload))
+          allCountriesActivities.filter((p) => p.Activities.some(({ name }) => name=== action.payload))
+    
       return {
             ...state,
-            filteredCountries: filteredActivities
+            countries: filteredActivities
         }
+      // case FOR_ACTIVITY_SEASON:
+      //   const allCountryActivities = state.countries;
+      //   const filteredActivitiesSeason =
+      //     action.payload === "all" 
+      //     ? allCountryActivities.filter((p) => p.Activities?.season
+      //     ? p.Activities : false):
+      //     allCountryActivities.filter((p) => p.Activities.some(({ season }) => season=== action.payload))
+      //     return {
+      //       ...state,
+      //       countries: filteredActivitiesSeason
+      //   }
     default:
       return state;
   }

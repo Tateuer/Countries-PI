@@ -6,7 +6,7 @@ export const ORDER_POPULATION = 'ORDER_POPULATION';
 export const ORDER_CONTINENT = 'ORDER_CONTINENT';
 export const GET_ACTIVITIES = 'GET_ACTIVITIES';
 export const BY_ACTIVITY = 'BY_ACTIVITY';
-
+//export const FOR_ACTIVITY_SEASON = 'FOR_ACTIVITY_SEASON';
 
 
 
@@ -68,4 +68,12 @@ export function byActivity(activity){
         payload: activity,
     }
 }
+
+// export function forActivity(activity){
+//     return {
+//         type: FOR_ACTIVITY_SEASON,
+//         payload: activity,
+//     }
+// }
+
 

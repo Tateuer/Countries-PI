@@ -18,11 +18,12 @@ router.get('/countries', async(req, res) => {
 				el.name.toLowerCase().includes(name.toLowerCase())
 			);
 			founds.length
-				? res.status(200).send(founds)
-				: res.status(404).send("No matches found ");
+			? res.status(200).send(founds)
+			: res.status(404).send("No matches found ");
 		}
 		res.status(200).send(allCountries);
-     } catch (error) {      
+     } catch (error) {     
+        
     }  
 });
 router.get('/countries/:id', async (req, res) => {

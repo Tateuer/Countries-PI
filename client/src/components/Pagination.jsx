@@ -1,21 +1,34 @@
 import React from "react";
 
-export default function Pagination ({countriesPerPage, countries, pagination}){
-    const pageNumbers= []
+export default function Pagination({
+  countriesPerPage,
+  countries,
+  pagination,
+  currentPage,
+}) {
+  const pageNumbers = [];
+  const math = Math.ceil((countries + 1) / countriesPerPage);
 
-    for(let i=0; i<=Math.ceil(countries/countriesPerPage); i++){      
-        pageNumbers.push(i+1)
-    }
-    return(
-        <nav>
-            <ul>
-                {pageNumbers &&
-                pageNumbers.map(number =>(
-                    <li className={"paginado"} key={number}>
-                        <button className="paginadoButton" onClick={()=> pagination(number)}>{number}</button>
-                    </li>
-                ))}
-            </ul>
-        </nav>
-    )
+  for (let i = 1; i <= math; i++) {
+    pageNumbers.push(i);
+  }
+  return (
+    <nav>
+      <ul>
+        {pageNumbers &&
+          pageNumbers.map((number) => (
+            <li className={"paginado"} key={number}>
+              <button
+                className={
+                  currentPage === number ? "activeBoton" : "paginadoButton"
+                }
+                onClick={() => pagination(number)}
+              >
+                {number}
+              </button>
+            </li>
+          ))}
+      </ul>
+    </nav>
+  );
 }
