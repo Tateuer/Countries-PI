@@ -14,7 +14,7 @@ body {
   font-family: 'Lato', sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  background-image: url('./countrieshome.jpg');
+  background-image: url('./img/countrieshome.jpg');
 }
 
 code {

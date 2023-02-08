@@ -52,7 +52,9 @@ export default function Home() {
           «THE WORLD IS A BOOK, AND THOSE WHO DON'T TRAVEL READ ONLY ONE PAGE»
         </h1>
       </div>
-      <Filters />
+      <Filters 
+        setCurrentPage={setCurrentPage}
+      />
       <button
         className="reloadbutton"
         onClick={(e) => {

@@ -25,16 +25,18 @@ const Filters = (props) => {
   function handleContinent(e) {
     e.preventDefault();
     dispatch(orderContinent(e.target.value));
+    props.setCurrentPage(1)
   }
 
   function handleFilteredActivity(e) {
     e.preventDefault();
     dispatch(byActivity(e.target.value));
+    props.setCurrentPage(1);
   }
-  //  function handleFilteredActivitySeason(e){
-  //     e.preventDefault();
-  //     dispatch(forActivity(e.target.value))
-  //   }
+  //     function handleFilteredActivitySeason(e){
+  //        e.preventDefault();
+  //        dispatch(forActivity(e.target.value))
+  //      }
 
   return (
     <div className="filtros">
@@ -81,15 +83,15 @@ const Filters = (props) => {
         </select>
       </div>
       {/* <div className="ordertext">
-        <span className="inputfiltros">Activities</span>
-          <select className="orderbutton" onChange= {(e) => handleFilteredActivitySeason(e)}>
-                <option value="all">All</option>
-                     {activities?.map((country) => {
-                       return <option key={country.id} value={country.season} >{country.season}</option>
-                    })}
+//         <span className="inputfiltros">Activities</span>
+//           <select className="orderbutton" onChange= {(e) => handleFilteredActivitySeason(e)}>
+//                 <option value="all">All</option>
+//                      {activities?.map((country) => {
+//                        return <option key={country.id} value={country.season} >{country.season}</option>
+//                     })}
                     
-         </select>
-        </div> */}
+//          </select>
+//         </div> */}
     </div>
   );
 };

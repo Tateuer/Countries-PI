@@ -201,12 +201,10 @@ export default function AddActivities() {
             />
             {error.season && <p>{error.season}</p>}
           </div>
-          {Object.keys(error).length === 0 ? (
+          {Object.keys(error).length === 0 && (
             <button type="submit" className="activities-submit">
               Submit
             </button>
-          ) : (
-            <></>
           )}
         </form>
       </div>

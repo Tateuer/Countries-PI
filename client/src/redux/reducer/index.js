@@ -25,7 +25,7 @@ export default function reducer(state = initialState, action) {
     case SEARCH_COUNTRIES:
       return {
         ...state,
-        filteredCountries: action.payload,
+        countries: action.payload,
       };
     case ORDER_ALPHABETICAL:
       let orderedCountries = [...state.countries];

@@ -48,7 +48,7 @@
 }
 
 .landinggroup{
-  background-image: url('./fondolanding.jpg');
+  background-image: url('./img/fondolanding.jpg');
   background-size: contain;
   background-position: 100% 0;
   background-repeat: repeat;
@@ -338,7 +338,7 @@ text-shadow: 1px 1px 2px black, 0 0 1em black, 0 0 0.2em black;
 }
 
 .countryDetail{
-  background-image: url("../src/fondocountries.jpg");
+  background-image: url("./img/fondocountries.jpg");
   background-size: cover;
   background-repeat: no-repeat;
   justify-content: center;
