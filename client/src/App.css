@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,700;0,900;1,700&family=Zen+Dots&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,700;0,900;1,700&family=Zen+Dots&display=swap");
 
 .App {
   text-align: center;
@@ -41,14 +41,14 @@
 
 /*Landing*/
 
-.landingcontainer{
+.landingcontainer {
   background-color: rgb(80, 80, 80);
   width: auto;
   height: 100vh;
 }
 
-.landinggroup{
-  background-image: url('./img/fondolanding.jpg');
+.landinggroup {
+  background-image: url("./img/fondolanding.jpg");
   background-size: contain;
   background-position: 100% 0;
   background-repeat: repeat;
@@ -72,22 +72,21 @@
   animation: giro 20s linear infinite;
 }
 
-
-.landing{
-padding: 50px;
-color: white;
-font-size: 25px;
-text-shadow: 1px 1px 2px black, 0 0 1em black, 0 0 0.2em black;
+.landing {
+  padding: 50px;
+  color: white;
+  font-size: 25px;
+  text-shadow: 1px 1px 2px black, 0 0 1em black, 0 0 0.2em black;
 }
 
-.landing2{
+.landing2 {
   padding: 50px;
   background-color: rgb(255, 255, 255);
   border-radius: 15px;
   box-shadow: 0 2px 4px rgb(0 0 0 / 10%), 0 8px 16px rgb(0 0 0 / 10%);
   margin: 50px;
 }
-.landingbutton{
+.landingbutton {
   padding: 16px 30px;
   font-size: 17px;
   border: none;
@@ -97,108 +96,119 @@ text-shadow: 1px 1px 2px black, 0 0 1em black, 0 0 0.2em black;
   margin-top: 20px;
   cursor: pointer;
 }
-.landingbutton:hover{
+.landingbutton:hover {
   background: #e8ef85;
   box-shadow: 0 2px 4px rgb(0 0 0 / 30%), 0 8px 16px rgb(0 0 0 / 30%);
-  transition: .3s;
+  transition: 0.3s;
   color: black;
 }
 
 /*Home*/
 
-.busquedafiltros{
+.busquedafiltros {
   padding: 15px;
 }
 
-.title{
+.title {
   padding-top: 30px;
 }
 
-.filtros{
+.filtros {
   /* background: linear-gradient(180deg, rgba(2,0,36,1) 0%, rgba(24,119,242,1) 0%, rgba(0,212,255,1) 100%); */
   /*background-color: black;*/
   display: flex;
   justify-content: space-between;
-  padding: 30px ;
+  padding: 30px;
 }
-  
-.inputfiltros{
+
+.inputfiltros {
   margin: 5px;
   font-size: 15px;
   padding: 10px;
   font-weight: 700;
 }
 
-.countries{
+.countries {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   justify-content: space-around;
   padding: 15px 10%;
-  
 }
 
-.nameCard{
+.nameCard {
   color: white;
   text-shadow: 1px 1px 2px black, 0 0 1em white, 0 0 0.2em white;
   padding-bottom: 20px;
   font-size: 22px;
 }
 
-.continentCard{
+.continentCard {
   color: white;
   text-shadow: 1px 1px 2px black, 0 0 1em white, 0 0 0.2em white;
   padding-bottom: 20px;
   font-size: 16px;
 }
 
-.countrycard{
+.countrycard {
   padding: 15px;
   margin: 15px;
   background-color: white;
   border-radius: 10px;
 }
 
-.country{
- width: 350px;
- height: 400px;
- display: flex;
- flex-direction: column;
- position:relative;
- /* background: linear-gradient(180deg, rgba(2,0,36,1) 0%, rgba(24,119,242,1) 0%, rgba(0,212,255,1) 100%); */
- background-image: radial-gradient(circle at 50% 106.21%, #ffff48 0, #ffff34 10%, #ffff22 20%, #ffef11 30%, #ffd403 40%, #f5b700 50%, #e49b03 60%, #d3830a 70%, #c56e10 80%, #b75c15 90%, #ac4d19 100%);
- margin-bottom: 50px;
- border-radius: 10px;
- padding: 15px;
- align-items: center;
- justify-content: center;
- text-align: center;
+.country {
+  width: 350px;
+  height: 400px;
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  /* background: linear-gradient(180deg, rgba(2,0,36,1) 0%, rgba(24,119,242,1) 0%, rgba(0,212,255,1) 100%); */
+  background-image: radial-gradient(
+    circle at 50% 106.21%,
+    #ffff48 0,
+    #ffff34 10%,
+    #ffff22 20%,
+    #ffef11 30%,
+    #ffd403 40%,
+    #f5b700 50%,
+    #e49b03 60%,
+    #d3830a 70%,
+    #c56e10 80%,
+    #b75c15 90%,
+    #ac4d19 100%
+  );
+  margin-bottom: 50px;
+  border-radius: 10px;
+  padding: 15px;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
 }
 
-.country h3{
+.country h3 {
   font-size: 30px;
 }
-.country img{
+.country img {
   box-shadow: 0 2px 4px rgb(0 0 0 / 30%), 0 8px 16px rgb(0 0 0 / 30%);
   object-fit: cover;
   max-width: 280px;
   max-height: 280px;
   justify-content: center;
   align-items: center;
- 
-} 
-.country img:hover{
+}
+.country img:hover {
   transform: scale(1.1);
   z-index: 1;
   transition: 0.3s;
 }
 
-.detail{
+.detail {
   background-color: white;
   align-items: center;
   position: sticky;
   font-size: 17px;
 }
-.searchbutton{
+.searchbutton {
   padding: 10px 22px;
   font-size: 15px;
   border: 3px solid black;
@@ -210,14 +220,14 @@ text-shadow: 1px 1px 2px black, 0 0 1em black, 0 0 0.2em black;
   cursor: pointer;
 }
 
-.searchbutton:hover{
-  background:  #e8ef85;
+.searchbutton:hover {
+  background: #e8ef85;
   box-shadow: 0 2px 4px rgb(0 0 0 / 30%), 0 8px 16px rgb(0 0 0 / 30%);
-  transition: .3s;
+  transition: 0.3s;
   font-weight: 700;
 }
 
-.activitybutton{
+.activitybutton {
   padding: 10px 22px;
   font-size: 15px;
   border: 3px solid black;
@@ -233,15 +243,14 @@ text-shadow: 1px 1px 2px black, 0 0 1em black, 0 0 0.2em black;
   right: 5%;
 }
 
-
-.activitybutton:hover{
-  background:  #e8ef85;
+.activitybutton:hover {
+  background: #e8ef85;
   box-shadow: 0 2px 4px rgb(0 0 0 / 30%), 0 8px 16px rgb(0 0 0 / 30%);
-  transition: .3s;
+  transition: 0.3s;
   font-weight: 700;
 }
 
-.reloadbutton{
+.reloadbutton {
   padding: 5px 11px;
   font-size: 12px;
   border: 3px solid black;
@@ -253,18 +262,18 @@ text-shadow: 1px 1px 2px black, 0 0 1em black, 0 0 0.2em black;
   cursor: pointer;
 }
 
-.reloadbutton:hover{
-  background:  #e8ef85;
-  transition: .3s;
+.reloadbutton:hover {
+  background: #e8ef85;
+  transition: 0.3s;
 }
 
-.searchinput{
+.searchinput {
   padding: 10px;
   border-radius: 6px;
   box-shadow: 0 2px 4px rgb(0 0 0 / 30%), 0 8px 16px rgb(0 0 0 / 30%);
 }
 
-.ordertext{
+.ordertext {
   padding: 16px 30px;
   font-size: 10px;
   border: 3px solid black;
@@ -275,38 +284,36 @@ text-shadow: 1px 1px 2px black, 0 0 1em black, 0 0 0.2em black;
   color: black;
 }
 
-.ordertext:hover{
-  background:  #e8ef85;
-  transition: .3s;
+.ordertext:hover {
+  background: #e8ef85;
+  transition: 0.3s;
 }
 
-.orderbutton{
+.orderbutton {
   padding: 5px;
   border-radius: 6px;
   cursor: pointer;
   color: #fe5a27;
   background-color: black;
 }
-.paginado{
+.paginado {
   display: inline-block;
 }
 
-
-.title h1{
+.title h1 {
   text-shadow: 1px 1px 2px black, 0 0 1em black, 0 0 0.2em black;
-  color:#e8ef85;
+  color: #e8ef85;
   padding-bottom: 10px;
 }
 
-.title h3{
+.title h3 {
   text-shadow: 1px 1px 2px black, 0 0 1em white, 0 0 0.2em white;
   color: #fe5a27;
 }
 
-
-.paginadoButton{
+.paginadoButton {
   border: 3px solid black;
-  background-color:#fe5a27;
+  background-color: #fe5a27;
   color: black;
   padding: 5px 12px;
   text-align: center;
@@ -318,9 +325,9 @@ text-shadow: 1px 1px 2px black, 0 0 1em black, 0 0 0.2em black;
   border-radius: 6px;
 }
 
-.activeBoton{
+.activeBoton {
   border: none;
-  background-color:#e8ef85;
+  background-color: #e8ef85;
   color: black;
   padding: 5px 12px;
   text-align: center;
@@ -332,12 +339,12 @@ text-shadow: 1px 1px 2px black, 0 0 1em black, 0 0 0.2em black;
   border-radius: 6px;
 }
 
-.paginadoButton:hover{
-  background:  #e8ef85;
-  transition: .3s;
+.paginadoButton:hover {
+  background: #e8ef85;
+  transition: 0.3s;
 }
 
-.countryDetail{
+.countryDetail {
   background-image: url("./img/fondocountries.jpg");
   background-size: cover;
   background-repeat: no-repeat;
@@ -349,34 +356,32 @@ text-shadow: 1px 1px 2px black, 0 0 1em black, 0 0 0.2em black;
   justify-content: center;
 }
 
-.countryDetailDiv{
-  background-color:rgba(255, 255, 255, 0.562) ;
+.countryDetailDiv {
+  background-color: rgba(255, 255, 255, 0.562);
   height: auto;
   margin: 5% 0%;
   padding: 7px;
   border-radius: 10px;
-  border: 5px solid  #308ec6;
+  border: 5px solid #308ec6;
   line-height: 1.5;
-  font-family: 'Lato', sans-serif;
+  font-family: "Lato", sans-serif;
   font-weight: 900;
   color: #04325b;
 }
 
-.countryDetailDiv h2{
+.countryDetailDiv h2 {
   display: flex;
   justify-content: center;
   font-size: 30px;
 }
 
-.activitydetail{
+.activitydetail {
   display: flex;
   justify-content: center;
   align-items: center;
-  
 }
 
-
-.detailbutton{
+.detailbutton {
   padding: 10px 22px;
   font-size: 15px;
   border: none;
@@ -386,12 +391,12 @@ text-shadow: 1px 1px 2px black, 0 0 1em black, 0 0 0.2em black;
   margin: 5px;
   cursor: pointer;
 }
-.detailbutton:hover{
-  background:  #276b92;
-  transition: .3s;
+.detailbutton:hover {
+  background: #276b92;
+  transition: 0.3s;
 }
 
-.detailflag{
+.detailflag {
   display: flex;
   max-height: 250px;
   position: 50%;
@@ -399,14 +404,27 @@ text-shadow: 1px 1px 2px black, 0 0 1em black, 0 0 0.2em black;
   margin: auto;
 }
 
-.spandetail{
+.spandetail {
   padding-right: 5px;
 }
 
 /* FORM */
 
-.cardActivity{
-  background-image: radial-gradient(circle at 50% 106.21%, #ffff48 0, #ffff34 10%, #ffff22 20%, #ffef11 30%, #ffd403 40%, #f5b700 50%, #e49b03 60%, #d3830a 70%, #c56e10 80%, #b75c15 90%, #ac4d19 100%);
+.cardActivity {
+  background-image: radial-gradient(
+    circle at 50% 106.21%,
+    #ffff48 0,
+    #ffff34 10%,
+    #ffff22 20%,
+    #ffef11 30%,
+    #ffd403 40%,
+    #f5b700 50%,
+    #e49b03 60%,
+    #d3830a 70%,
+    #c56e10 80%,
+    #b75c15 90%,
+    #ac4d19 100%
+  );
   width: 40%;
   align-items: center;
   margin: 0 30%;
@@ -419,19 +437,21 @@ text-shadow: 1px 1px 2px black, 0 0 1em black, 0 0 0.2em black;
   border: 3px solid black;
 }
 
-.cardActivity h1{
+.cardActivity h1 {
   text-shadow: 1px 1px 2px black, 0 0 1em white, 0 0 0.2em white;
   padding-top: 50px;
 }
 
 .activities-form {
- padding-top: 50px ;
- line-height: 2;
- display: flex;
- flex-direction:column;
+  padding-top: 50px;
+  line-height: 2;
+  display: flex;
+  flex-direction: column;
 }
 
-.cardActivity input::-webkit-input-placeholder, input, select {
+.cardActivity input::-webkit-input-placeholder,
+input,
+select {
   text-align: center;
 }
 
@@ -447,41 +467,41 @@ text-shadow: 1px 1px 2px black, 0 0 1em black, 0 0 0.2em black;
 }
 
 .activities-button:hover {
-  background:  #e8ef85;
-  transition: .3s;
-  
+  background: #e8ef85;
+  transition: 0.3s;
 }
 
-.removeCountry{
+.removeCountry {
   background-color: transparent;
-    border: none;
-    color: red;
-    cursor: pointer;
-    font-size: 18px;
+  border: none;
+  color: red;
+  cursor: pointer;
+  font-size: 18px;
 }
 
-.activities-form-input, select{
+.activities-form-input,
+select {
   background: none;
   border: none;
   outline: none;
   border-bottom: 1px solid black;
 }
 
-.activityOption{
+.activityOption {
   background: orangered;
 }
 
 .activities-form-row {
   display: flex;
-  flex-direction:column ;
+  flex-direction: column;
 }
 
-.activities-list{
-list-style: none;
-display: inline-flex;
+.activities-list {
+  list-style: none;
+  display: inline-flex;
 }
 
-.activities-submit{
+.activities-submit {
   margin: 20px 50px;
   background: black;
   color: #fe5a27;
@@ -492,12 +512,12 @@ display: inline-flex;
 }
 
 .activities-submit:hover {
-  background: #fe5a27 ;
-  transition: .3s;
+  background: #fe5a27;
+  transition: 0.3s;
   color: white;
 }
 
-.fondo-form{
+.fondo-form {
   background-size: cover;
   background-repeat: no-repeat;
   display: flex;
@@ -506,4 +526,8 @@ display: inline-flex;
   justify-content: center;
   align-items: center;
   height: 100vh;
+}
+
+.loading {
+  background: green;
 }

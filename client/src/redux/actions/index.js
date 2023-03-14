@@ -19,7 +19,7 @@ export function getCountries(){
                 payload: countries.data
             })
         })
-    }
+    }   
 }
 
 export function searchCountries(search){
